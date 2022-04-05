@@ -1,0 +1,102 @@
+<svg width="1194" height="1201" viewBox="0 0 1194 1201" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="line1" d="M89 916L66.5 875L572.5 599.5L577 650L89 916Z" fill="#0D0D0D"/>
+<path class="line2" d="M1192 562.5C1193.6 568.9 1193.33 604.5 1193 621.5L439 1179.5L385 1163L1192 562.5Z" fill="#0D0D0D"/>
+<path class="line3" d="M22.5 763C23.3 772.2 38.1667 811.5 45.5 830C223.5 922.5 582 1143.5 638.5 1199C654 1197.33 698.6 1192.3 711 1189.5C499 1033 223.5 873.167 22.5 763Z" fill="#0D0D0D"/>
+<path class="line4" d="M985.5 1055.5L1021.5 1021.5L2.5 548C1.7 561.2 0.5 586.5 0 597.5L985.5 1055.5Z" fill="#0D0D0D"/>
+<path class="line5" d="M1087 260.5C1071 235.3 1034.5 192 1018 174C746.492 338.369 528 425 341 489C192.179 543.448 82.3548 585.185 0 619.5C0 627.667 0.6 648 3 664L1087 260.5Z" fill="#0D0D0D"/>
+<path class="line6" d="M549 2.9998C576.6 -0.200204 622.5 1.66646 642 2.9998L65 329C69.8 315 99.3333 269.833 113.5 249L549 2.9998Z" fill="#0D0D0D"/>
+<path class="line7" d="M159.5 1008.5L191 1040C594.5 535 942 436 1145 364.5L1113.5 301C536 517.5 234.5 920.5 159.5 1008.5Z" fill="#0D0D0D"/>
+<path class="line8" d="M1192.5 577C1193.3 559.8 1190.5 539.5 1189 531.5C488.5 589.5 224.833 671.5 16.5 741.5C17.3 745.1 25.8333 772.667 30 786C438 642.8 974.5 594 1192.5 577Z" fill="#0D0D0D"/>
+<path class="line9" d="M877 71.4911L833 51C806.5 403.846 673.5 914.624 583 1199H631.5C752.5 795.176 853 384.855 877 71.4911Z" fill="#0D0D0D"/>
+<path class="line10" d="M1172 759C1176.4 748.2 1183.83 706.167 1187 686.5L577 1199.5C583.5 1200.5 631.5 1201 651 1197.5L1172 759Z" fill="#0D0D0D"/>
+<path class="line11" d="M806.5 1162C792.1 1168.4 746.5 1181 725.5 1186.5C781.5 968 871.5 591.5 1047 206.5L1079.5 248.5C900.5 648.5 829 985 806.5 1162Z" fill="#0D0D0D"/>
+<path class="line12" d="M96 274.5L123.5 234.5C348.5 446.5 629 703.5 679.5 1194.5L637 1198.5C610.5 765.5 268.5 432 96 274.5Z" fill="#0D0D0D"/>
+<path class="line13" d="M603 0.999986C602.6 0.599986 570.833 1.83332 555 2.49999C555.5 337.5 588 1042.5 649.5 1197.5C656.833 1197.17 675 1195.7 689 1192.5C624.5 973 600.5 309.5 603 0.999986Z" fill="#0D0D0D"/>
+
+
+
+
+
+
+    <style>
+        .line1, .line11 {
+            animation: line1 4s infinite;
+            -webkit-animation: line1 4s infinite;
+        }
+        .line2, .line5, .line8 {
+            animation: line2 6s infinite;
+            -webkit-animation: line2 8s infinite;
+        }
+        .line6 {
+            animation: line3 6s infinite;
+            -webkit-animation: line3 6s infinite;
+        }
+        .line13, .line9, .line7 {
+            animation: line4 8s infinite;
+            -webkit-animation: line4 8s infinite;
+            transform-origin: 20px;
+        }
+
+    .line7, .line8 {
+        animation-delay: 1s;
+        animation-duration: 12s;
+    }
+
+
+
+
+        @keyframes line1 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(-10px, 10px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @keyframes line2 {
+            0% {
+                transform: translate(0, 0) rotate(0);
+            }
+
+            50% {
+                transform: translate(-10px, 10px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0);
+            }
+        }
+        @keyframes line3 {
+            0% {
+                transform: rotate(0) translateX(0);
+            }
+
+            50% {
+                transform:  rotate(2deg) translateX(-5px);
+            }
+
+            100% {
+                transform:  rotate(0) translateX(0);
+            }
+        }
+         @keyframes line4 {
+            0% {
+                transform: rotate(0) ;
+            }
+
+            50% {
+                transform:  rotate(4deg);
+            }
+
+            100% {
+                transform:  rotate(0);
+            }
+        }
+    </style>
+
+</svg>
