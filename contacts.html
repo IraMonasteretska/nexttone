@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaction offer 1</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/plyr.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,7 +26,6 @@
                                 <span></span>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -42,16 +42,39 @@
         <div class="breadcrumbs">
             <div class="container">
                 <ul>
-                    <li><a href="index.html">Develop Resources</a></li>
-                    <li>Contact Form</li>
+                    <li><a href="index.html">home</a></li>
+                    <li>Contact us</li>
                 </ul>
             </div>
         </div>
-        <div class="interactionpagesect">
+        <div class="contacts-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <form action="#" class="interactioform">
+                    <div class="col-lg-6">
+                        <div class="contacts__sect">
+                            <h1>
+                                contact
+                                <span>us</span>
+                            </h1>
+                            <p>
+                                NEXTONE CONSULTING<br>
+                                44 KING ST WEST #3322<br>
+                                TORONTO, M5H 1H1, ON
+                            </p>
+                            <p>
+                                tell:
+                                <a href="tel:515650-3315">(515) 650-3315</a>
+                            </p>
+                            <div class="map-wrapper">
+                                <a target="_blank" href="https://www.google.com.ua/maps/place/44+King+St+W+%233322,+Toronto,+ON+M5H+1H1,+Canada/@43.64912,-79.3810903,18z/data=!4m13!1m7!3m6!1s0x89d4cb32abd5edc5:0x84462ac64acb7543!2s44+King+St+W+%233322,+Toronto,+ON+M5H+1H1,+Canada!3b1!8m2!3d43.64912!4d-79.379996!3m4!1s0x89d4cb32abd5edc5:0x84462ac64acb7543!8m2!3d43.64912!4d-79.379996?hl=en">
+                                    <img src="img/map.jpg" alt="map">
+                                    <p>Open in Google Maps</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <form action="#" class="interactioform interactioform__contacts">
                             <div class="inputfield">
                                 <label for="name">Full Name <span>*</span></label>
                                 <input type="text" id="name" autocomplete="off">
@@ -61,42 +84,18 @@
                                 <input type="email" id="email" autocomplete="off">
                             </div>
                             <div class="inputfield">
-                                <label for="num">Number of people <span>*</span></label>
-                                <input type="number" id="num" autocomplete="off">
+                                <label for="tel">Phone number</label>
+                                <input type="number" id="tel" autocomplete="off">
                             </div>
                             <div class="inputfield">
-                                <label for="">Preferred duration <span>*</span></label>
-                                <div class="checkboxessect">
-                                    <div class="checkboxblock">
-                                        <input type="checkbox" id="check1">
-                                        <label for="check1">1 month</label>
-                                    </div>
-                                    <div class="checkboxblock">
-                                        <input type="checkbox" id="check2">
-                                        <label for="check2">3 month</label>
-                                    </div>
-                                    <div class="checkboxblock">
-                                        <input type="checkbox" id="check3">
-                                        <label for="check3">6 month</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inputfield">
-                                <label for="other">Other (specify) </label>
-                                <textarea id="other"></textarea>
+                                <label for="discrube">Please describe your request</label>
+                                <textarea id="discrube"></textarea>
                             </div>
                             <button type="submit" class="formbtn">
                                 Submit
                                 <img src="img/arrow-btn.svg" alt="arrow">
                             </button>
                         </form>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="interactionpagesect__rightsect">
-                            <p class="interactionpagesect__righttitle">DEVELOP RESOURCES</p>
-                            <img class="emailpic" src="img/mail-img.png" alt="img">
-                            <img class="emailsymbol" src="img/email-symbol.png" alt="img">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -119,9 +118,14 @@
                 <p>Designed by Oleksiy Khoroshylov in Richmond Hill <img src="img/book-icon.svg" alt="icon"></p>
             </div>
         </div>
+
     </footer>
+    
+    
+
 
     <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/plyr.polyfilled.js"></script>
     <script src="js/common.js"></script>
 </body>
 

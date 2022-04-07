@@ -7,6 +7,9 @@ $(document).ready(function () {
     });
 
 
+    if ($(".js-player").length) {
+        const players = Plyr.setup('.js-player');
+    }
 
 
 
