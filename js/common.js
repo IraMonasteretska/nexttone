@@ -30,9 +30,9 @@ $(document).ready(function () {
             speed: 800,
             loop: true,
             autoplay: {
-                delay: 6000,
+                delay: 9000,
             },
-            minimumVelocity: 0.5,
+            minimumVelocity: 2,
             onSlideChangeStart: function () {
                 resizeSwiper();
             },
