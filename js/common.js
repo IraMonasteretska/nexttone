@@ -30,7 +30,7 @@ $(document).ready(function () {
             speed: 800,
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 6000,
             },
             minimumVelocity: 0.5,
             onSlideChangeStart: function () {
@@ -51,13 +51,13 @@ $(document).ready(function () {
 
     $('.mainslider .mainstep__btns-next.opennav').click(function (e) {
         e.preventDefault();
-        $(this).parents('.mainstep').next('.colapsenav').slideDown();
+        $(this).parents('.mainstep').next('.colapsenav').show();
 
 
     });
     $('.mainslider .mainstep__btns-back').click(function (e) {
         e.preventDefault();
-        $(this).parents('.mainstep').next('.colapsenav').slideUp();
+        $(this).parents('.mainstep').next('.colapsenav').hide();
 
     });
 
@@ -66,7 +66,7 @@ $(document).ready(function () {
     $(".mainstep__btns-next.opennav").click(function () {
         $('html, body').animate({
             scrollTop: $(this).offset().top
-        }, 500);
+        }, 0);
     });
 
 });
