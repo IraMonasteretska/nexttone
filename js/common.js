@@ -24,25 +24,8 @@ $(document).ready(function () {
     // });
 
 
-    if ($('.mySwiper').length) {
-        var swiper = new Swiper(".mySwiper", {
-            calculateHeight: true,
-            speed: 800,
-            loop: true,
-            autoplay: {
-                delay: 9000,
-            },
-            minimumVelocity: 2,
-            onSlideChangeStart: function () {
-                resizeSwiper();
-            },
-        });
-        swiper.on('slideChangeTransitionStart', () => {
-            $('.colapsenav').slideUp();
-            $(this).parents('.mainstep').next('.colapsenav').removeClass('show');
-            $('.mainstep .mainstep__btns a.mainstep__btns-back').removeClass('show');
-        });
-    }
+
+
 
 
 
@@ -99,6 +82,9 @@ $(document).ready(function () {
             $('.mainstep .mainstep__btns a.mainstep__btns-back').removeClass('show');
         }
     });
+
+
+
 
 
 

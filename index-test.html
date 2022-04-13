@@ -321,7 +321,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
 
@@ -347,32 +347,50 @@
 
 
     <script src="js/lib/jquery.js"></script>
+    <!-- <script src="js/lib/slick.min.js"></script> -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/common.js"></script>
 
     <script>
-if ($('.mySwiper').length) {
-        var swiper = new Swiper(".mySwiper", {
-            calculateHeight: true,
-            speed: 800,
-            initialSlide: 0,
-            autoplay: {
-                delay: 9000,
-            },
-            minimumVelocity: 2,
-            onSlideChangeStart: function () {
-                resizeSwiper();
-            },
-        });
-        swiper.on('slideChangeTransitionStart', () => {
-            $('.colapsenav').slideUp();
-            $(this).parents('.mainstep').next('.colapsenav').removeClass('show');
-            $('.mainstep .mainstep__btns a.mainstep__btns-back').removeClass('show');
-        });
-    
-    }
+        if ($('.mySwiper').length) {
+            var swiper = new Swiper(".mySwiper", {
+                calculateHeight: true,
+                speed: 800,
+                initialSlide: 1,
+                // autoplay: {
+                //     delay: 9000,
+                // },
+                minimumVelocity: 2,
+                onSlideChangeStart: function () {
+                    resizeSwiper();
+                },
+            });
+            swiper.on('slideChangeTransitionStart', () => {
+                $('.colapsenav').removeClass('show');
+                $(this).parents('.mainstep').next('.colapsenav').removeClass('show');
+                $('.mainstep .mainstep__btns a.mainstep__btns-back').removeClass('show');
+            });
 
+
+
+
+
+
+            let slideNum = 1;
+
+            $(`.swslide${slideNum} .colapsenav`).addClass('show');
+            swiper.slideTo(slideNum);
+            
+            // Кнопку back показую - вона прихована по замовчуванню
+            $(`.swslide${slideNum} .mainstep__btns .mainstep__btns-back`).addClass('show');
+
+
+        }
     </script>
+
+
+
+    <!-- container colapsenav test show -->
 </body>
 
 </html>
