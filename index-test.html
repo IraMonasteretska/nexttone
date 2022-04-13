@@ -376,11 +376,10 @@
 
 
 
-            let slideNum = 1;
+            let slideNum = 0;
 
-            $(`.swslide${slideNum} .colapsenav`).addClass('show');
             swiper.slideTo(slideNum);
-            
+            $(`.swslide${slideNum} .colapsenav`).addClass('show');
             // Кнопку back показую - вона прихована по замовчуванню
             $(`.swslide${slideNum} .mainstep__btns .mainstep__btns-back`).addClass('show');
 
