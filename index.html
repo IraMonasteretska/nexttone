@@ -365,7 +365,8 @@ if ($('.mySwiper').length) {
             },
         });
         swiper.on('slideChangeTransitionStart', () => {
-            $('.colapsenav').slideUp();
+            // $('.colapsenav').hide();
+            $('.colapsenav').removeClass('show');
             $(this).parents('.mainstep').next('.colapsenav').removeClass('show');
             $('.mainstep .mainstep__btns a.mainstep__btns-back').removeClass('show');
         });
