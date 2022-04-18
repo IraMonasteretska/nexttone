@@ -1,0 +1,104 @@
+footer.footer {
+    position: relative;
+    z-index: 4;
+
+    .footer__topsect {
+        height: 140px;
+        background: #030303;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 56px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #fff;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #FFEA00;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__bottsect {
+        background: #fff;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            text-align: center;
+            color: #080808;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+
+            img {
+                margin-left: 6px;
+                margin-top: -2px;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:1600.8px) {
+    footer.footer .footer__topsect {
+        height: 100px;
+    }
+
+    footer.footer .footer__topsect ul li a {
+        font-size: 16px;
+    }
+
+    footer.footer .footer__bottsect {
+        height: 60px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    footer.footer .footer__topsect {
+        height: 80px;
+    }
+
+    footer.footer .footer__bottsect {
+        height: 50px;
+    }
+}
+
+@media(max-width:575.8px) {
+    footer.footer .footer__topsect ul li {
+        margin-right: 30px;
+    }
+
+    footer.footer .footer__topsect {
+        height: 60px;
+    }
+
+    footer.footer .footer__bottsect p {
+        font-size: 14px;
+    }
+}

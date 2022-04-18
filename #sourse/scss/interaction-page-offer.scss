@@ -1,0 +1,383 @@
+.interactionpagesect {
+    padding: 45px 0 140px;
+    position: relative;
+    z-index: 3;
+}
+
+.interactioform {
+    max-width: 515px;
+
+    .inputfield {
+        margin-bottom: 39px;
+    }
+
+    label {
+        display: inline-block;
+        color: #fff;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 7px;
+
+        span {
+            color: #FFF500;
+            font-weight: 400;
+            font-size: 29px;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+        height: 63px;
+        background: #252528;
+        border: 1px solid #252528;
+        box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.52);
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        background: transparent;
+        resize: none;
+        border: none;
+        border-bottom: 3px solid #252528;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        height: 40px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #252528;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+
+    .formbtn {
+        width: 220px;
+        min-height: 47px;
+        background-color: transparent;
+        border: 1.5px solid #FFF500;
+        display: block;
+        margin: 0 auto;
+        color: #FFF500;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        transition: 0.3s;
+
+        img {
+            margin-left: 14px;
+            margin-top: -3px;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            box-shadow: 0 3px 7px #fff50059;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.checkboxessect {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+
+    .checkboxblock {
+        input {
+            display: none;
+
+            &:checked+label {
+                &::after {
+                    background-image: url('../img/check.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        label {
+            margin: 0;
+            position: relative;
+            padding-left: 42px;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 27px;
+                height: 27px;
+                background-color: #252528;
+                box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.52);
+                position: absolute;
+                left: 0;
+                top: 1px;
+            }
+        }
+
+    }
+}
+
+.interactionpagesect__rightsect {
+    position: relative;
+    padding-left: 23%;
+
+    .interactionpagesect__righttitle {
+        color: rgba(255, 255, 255, 0.15);
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 41.6011px;
+        line-height: 71px;
+        margin: 0;
+    }
+
+    .emailpic {
+        max-width: 626px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .emailsymbol {
+        position: absolute;
+        z-index: 1;
+        left: 10px;
+        bottom: -120px;
+    }
+}
+
+.interactionpagesect__rightsect .emailsymbol {
+    z-index: -1;
+}
+
+.checkboxessect.radio .checkboxblock label:after {
+    border-radius: 50%;
+    border: 1px solid #FFF500;
+}
+
+.checkboxessect.radio .checkboxblock input:checked+label:after {
+    background-image: url('../img/point.svg');
+    background-position: center;
+}
+
+.interactioform input::placeholder {
+    color: #616060;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.interactioform .inputfield {
+    position: relative;
+}
+
+.linkicon {
+    position: absolute;
+    left: 20px;
+    top: 58px;
+}
+
+.inputfield.iconleft {
+    input {
+        padding-left: 60px;
+    }
+}
+
+
+
+@media(max-width:1600.8px) {
+    .breadcrumbs ul li {
+        font-size: 16px;
+    }
+
+    .breadcrumbs {
+        padding: 30px 0 10px 0;
+    }
+
+    .interactioform label {
+        font-size: 16px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .interactioform input[type=email],
+    .interactioform input[type=number],
+    .interactioform input[type=text] {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .interactioform .inputfield {
+        margin-bottom: 30px;
+    }
+
+    .checkboxessect .checkboxblock label:after {
+        width: 22px;
+        height: 22px;
+
+    }
+
+    .checkboxessect .checkboxblock label {
+        padding-left: 32px;
+    }
+
+    .interactioform textarea {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .interactioform .formbtn {
+        font-size: 18px;
+        width: 200px;
+        min-height: 44px;
+    }
+
+    .interactionpagesect__rightsect .interactionpagesect__righttitle {
+        font-size: 36px;
+        line-height: 140%;
+    }
+
+    .interactionpagesect__rightsect {
+        padding-left: 17%;
+    }
+
+    .interactionpagesect__rightsect .emailsymbol {
+        width: 320px;
+    }
+
+    .interactionpagesect {
+        padding: 35px 0 80px;
+    }
+
+    .linkicon {
+        top: 45px;
+        left: 15px;
+    }
+
+    .inputfield.iconleft input {
+        padding-left: 50px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .interactionpagesect__rightsect {
+        padding-left: 70px;
+    }
+
+    .interactionpagesect__rightsect .emailpic {
+        max-width: 100%;
+    }
+
+    .interactionpagesect__rightsect .emailsymbol {
+        width: 290px;
+        left: -40px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .interactioform {
+        max-width: 100%;
+    }
+
+    .interactionpagesect__rightsect {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+
+    .interactionpagesect__rightsect .emailpic {
+        width: 100%;
+    }
+
+    .interactionpagesect__rightsect .emailsymbol {
+        display: none;
+    }
+
+    .interactionpagesect {
+        padding: 35px 0 50px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .interactionpagesect__rightsect .interactionpagesect__righttitle {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .breadcrumbs ul li {
+        font-size: 14px;
+    }
+
+    .breadcrumbs ul li:after {
+        margin-left: 6px;
+    }
+
+    .breadcrumbs ul li {
+        margin-right: 3px;
+    }
+
+    .interactioform input[type=email],
+    .interactioform input[type=number],
+    .interactioform input[type=text] {
+        height: 44px;
+    }
+
+    .interactionpagesect {
+        padding: 25px 0 40px;
+    }
+
+    .interactioform .inputfield {
+        margin-bottom: 25px;
+    }
+
+    .interactionpagesect__rightsect .interactionpagesect__righttitle {
+        font-size: 24px;
+    }
+
+    .linkicon {
+        width: 20px;
+        left: 10px;
+    }
+
+    .inputfield.iconleft input {
+        padding-left: 40px;
+    }
+
+    .interactioform label {
+        font-size: 15px;
+    }
+
+}
+
+
+@media(max-width:360.8px) {
+    .interactioform label {
+        font-size: 14px;
+    }
+}

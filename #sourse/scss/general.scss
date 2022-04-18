@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #090909;
+}
+
+@media(min-width:1600px) {
+    .container {
+        max-width: 1390px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+main.main {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    transition: 0.7s;
+    min-height: calc(100vh - 207px);
+}
+
+@media(max-width:1600.8px) {
+    main.main {
+        min-height: calc(100vh - 160px);
+    }
+}
+
+@media(max-width:1399.8px) {
+    main.main {
+        min-height: calc(100vh - 130px);
+    }
+}
+
+@media(max-width:575.8px) {
+    main.main {
+        min-height: calc(100vh - 110px);
+    }
+}
+
+.breadcrumbs {
+    position: relative;
+    z-index: 3;
+    padding: 39px 0 10px 0;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 150%;
+            color: #333333;
+            margin-right: 8px;
+
+            a {
+                color: #525252;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: '/';
+                display: inline-block;
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+// font-family: 'Allerta Stencil', sans-serif;
+// font-family: 'Roboto', sans-serif;

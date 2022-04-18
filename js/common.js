@@ -36,14 +36,14 @@ $(document).ready(function () {
 
     $('.mainslider .mainstep__btns-next.opennav').click(function (e) {
         e.preventDefault();
-        $(this).parents('.mainstep').next('.colapsenav').show();
+        // $(this).parents('.mainstep').next('.colapsenav').show();
         $(this).parents('.mainstep').next('.colapsenav').addClass('show');
 
 
     });
     $('.mainslider .mainstep__btns-back').click(function (e) {
         e.preventDefault();
-        $(this).parents('.mainstep').next('.colapsenav').hide();
+        // $(this).parents('.mainstep').next('.colapsenav').hide();
         $(this).parents('.mainstep').next('.colapsenav').removeClass('show');
     });
 
