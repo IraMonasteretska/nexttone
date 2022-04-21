@@ -999,3 +999,20 @@
 
     
 }
+
+
+
+
+// 21,04
+.offerswrapper {
+    position: relative;
+    z-index: 2;
+
+    .colapsenav {
+        padding-bottom: 50px;
+    }
+    .mainstep {
+        padding-top: 0;
+    }
+}
+
