@@ -1,0 +1,170 @@
+.tywrapper {
+    min-height: calc(100vh - 207px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+}
+
+.tywraptext {
+    text-align: center;
+}
+
+.tywraptext h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 81px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #FFEA00;
+}
+
+.tywraptext .descr {
+    font-weight: 300;
+    font-size: 57px;
+    line-height: 79px;
+    color: #fff;
+    margin-bottom: 85px;
+}
+
+.tywraptext a {
+    display: inline-block;
+    border: 1.5px solid #FFF500;
+    color: #FFF500;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+    padding: 15px 35px;
+    transition: 0.3s;
+}
+
+.tywraptext a span {
+    font-weight: 700;
+}
+
+.tywraptext a::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 17px;
+    background: url('../img/thanks-arrow.svg') no-repeat center / 100%;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.tywraptext a:hover {
+    box-shadow: 0 0 10px #FFF500;
+}
+
+.tywraptext a:hover::before {
+    transform: translateX(-10px);
+}
+
+.typlain {
+    height: 100%;
+    position: absolute;
+    left: 8%;
+    top: 0;
+}
+
+.typlain {
+    max-width: 100%;
+}
+
+@media(max-width:1600.8px) {
+    .tywraptext h1 {
+        font-size: 60px;
+        line-height: normal;
+    }
+
+    .tywraptext .descr {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    .tywraptext a {
+        font-size: 20px;
+    }
+
+    .typlain {
+        left: 12%;
+    }
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .typlain {
+        position: relative;
+        height: auto;
+        max-width: 600px;
+        margin: 0 auto;
+        left: inherit;
+        display: block;
+    }
+
+    .tywrapper {
+        display: block;
+        padding: 120px 0 0 0;
+    }
+
+    .tywrapper {
+        min-height: 600px;
+    }
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .tywraptext h1 {
+        font-size: 46px;
+    }
+
+    .tywraptext .descr {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .typlain {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .tywrapper {
+        padding: 60px 0 0 0;
+    }
+
+    .tywraptext h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .tywraptext .descr {
+        font-size: 16px;
+    }
+
+    .tywraptext a {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+
+    .tywraptext a::before {
+        width: 21px;
+        height: 14px;
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+    }
+
+
+
+
+
+}
