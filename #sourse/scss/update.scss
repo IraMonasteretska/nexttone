@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+// font-family: "Allerta Stencil", sans-serif;
+
 // menu
 
 .header__menu {
@@ -272,3 +275,171 @@
         width: 300px;
     }
 }
+
+// index - section
+
+.animpic4 {
+    max-width: 400px;
+    top: -70px;
+    right: 50px;
+}
+
+.offerblock.offerblock_red {
+    .mainstep .mainstep__num {
+        max-width: 96px;
+    }
+
+    .mainstep h3 {
+        color: #CD0100;
+    }
+
+    .offr__title {
+        color: #fff;
+        font-size: 37px;
+        text-transform: uppercase;
+        font-family: "Allerta Stencil", sans-serif;
+        margin-bottom: 40px;
+
+        span {
+            color: #CD0100;
+        }
+    }
+
+    .mainstepbox {
+        height: 100%;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                position: relative;
+                padding-left: 26px;
+                margin-bottom: 35px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../img/new/listel.png') no-repeat center / 100% 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 9px;
+                }
+            }
+
+            .lititle {
+                font-size: 25px;
+                color: #fff;
+                margin-bottom: 25px;
+
+            }
+
+            .lidescr {
+                color: #7E7E7E;
+                font-size: 21px;
+            }
+        }
+    }
+
+    .mainstep__btns a.mainstep__btns-next {
+        color: #CD0100;
+        border: 1.5px solid #CD0100;
+    }
+
+    .animpic1 {
+        right: 30px;
+        top: 30px;
+    }
+
+    .animpic2 {
+        right: 0;
+        top: -300px;
+    }
+}
+
+@media(max-width:1600.8px) {
+    .offerblock.offerblock_red .offr__title {
+        font-size: 30px;
+    }
+
+    .offerblock.offerblock_red .mainstepbox ul .lititle {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .offerblock.offerblock_red .mainstepbox ul .lidescr {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:1440.8px) {
+    .offerblock.offerblock_red .animpic1 {
+        max-width: 340px;
+    }
+
+    .offerblock.offerblock_red .animpic2 {
+        max-width: 500px;
+        top: -200px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .offerblock.offerblock_red .offr__title {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .offerblock.offerblock_red .mainstepbox {
+        margin-bottom: 30px;
+        height: auto;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .offerblock.offerblock_red .offr__title {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .offerblock.offerblock_red .mainstepbox ul .lititle {
+        font-size: 20px;
+    }
+
+    .offerblock.offerblock_red .mainstepbox ul li:before {
+        top: 7px;
+    }
+
+    .offerblock.offerblock_red .mainstepbox ul .lidescr {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .offerblock.offerblock_red .animpic1 {
+        max-width: 180px;
+    }
+
+    .offerblock.offerblock_red .animpic2 {
+        top: -100px;
+        width: auto;
+        max-width: 310px;
+    }
+
+
+}
+
+
+
+
+
+
+// font-family: "Allerta Stencil", sans-serif;
