@@ -123,7 +123,12 @@ $(document).ready(function () {
 
 
 
-
+    // Update
+    $('.header__menudd > a').click(function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('open');
+        $(this).next('.header__submenu').slideToggle();
+    });
 
 
 
