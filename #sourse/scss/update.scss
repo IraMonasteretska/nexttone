@@ -380,6 +380,11 @@
     right: 50px;
 }
 
+.offerblock.offerblock_redtexts {
+    z-index: 4;
+    position: relative;
+}
+
 .offerblock.offerblock_red {
     .mainstep .mainstep__num {
         max-width: 96px;
@@ -450,6 +455,8 @@
         border: 1.5px solid #CD0100;
     }
 
+ 
+
     .animpic1 {
         right: 30px;
         top: 30px;
@@ -458,6 +465,13 @@
     .animpic2 {
         right: 0;
         top: -300px;
+    }
+}
+
+.offerblock_redtexts .mainstep__btns a.mainstep__btns-next {
+    &:hover {
+        color: #fff;
+        border: 1.5px solid #fff;
     }
 }
 
@@ -478,6 +492,14 @@
     text-transform: capitalize;
 }
 
+.contacts-redtitle {
+    margin-bottom: 75px;
+    color: #CD0100;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
 @media(max-width:1600.8px) {
     .offerblock.offerblock_red .offr__title {
         font-size: 30px;
@@ -490,6 +512,10 @@
 
     .offerblock.offerblock_red .mainstepbox ul .lidescr {
         font-size: 18px;
+    }
+
+    .contacts-redtitle {
+        font-size: 42px;
     }
 
 }
@@ -517,6 +543,22 @@
         height: auto;
     }
 
+    .contacts-redtitle {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .offerswrapper.mvp1 .imgwrap {
+        padding-top: 20px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .contacts-redtitle {
+        font-size: 32px;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -561,6 +603,14 @@
         padding-top: 30px;
     }
 
+    .contacts-redtitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .offerswrapper.mvp1 .imgwrap {
+        padding-top: 0;
+    }
 }
 
 
