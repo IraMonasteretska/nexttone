@@ -461,7 +461,22 @@
     }
 }
 
+.offerblock_redtexts {
+    .mainstep h3,
+    .mainstepbox .mainstepbox_num span {
+        color: #CD0100;
+    }
 
+    .mainstep__btns a.mainstep__btns-next {
+        color: #CD0100;
+        border: 1.5px solid #CD0100;
+    }
+
+}
+
+.mainstepbox_descr {
+    text-transform: capitalize;
+}
 
 @media(max-width:1600.8px) {
     .offerblock.offerblock_red .offr__title {
